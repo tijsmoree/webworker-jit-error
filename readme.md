@@ -9,3 +9,7 @@ The error does not occur when using `ng serve`, so I use `http-server` to show t
 - `pnpm use`
 
 The last command will run a server on some `localhost:80xx` port. There the debug console will show the error occuring in the web worker, while it should actually log `2468`.
+
+## Problem indications
+
+I added two `NOTE`s to the project in the [web worker](./src/app/app.worker.ts) and a [service](./src/app/doubler/double.service.ts) that may indicate where the problem lies.
